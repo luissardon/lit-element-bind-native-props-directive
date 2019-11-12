@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noLib": false,
+    "outDir": "./lib",
+    "removeComments": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "target": "es2017"
+  },
+  "exclude": [
+    "node_modules",
+    "test",
+  ]
+}

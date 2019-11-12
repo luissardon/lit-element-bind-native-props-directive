@@ -1,0 +1,32 @@
+{
+  "name": "lit-html-bind-native-props-directive",
+  "version": "0.0.1",
+  "description": "Lit-html directive that binds native props from a native element to a lit-element component",
+  "main": "lib/lit-element-bind-native-props-directive.js",
+  "types": "lib/lit-element-bind-native-props-directive.d.js",
+  "scripts": {
+    "build": "rm -Rf ./lib && tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luissardon/lit-html-bind-native-props-directive.git"
+  },
+  "keywords": [],
+  "author": "Luis Sardon <lmsardon@gmail.com> (https://github.com/luissardon)",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/luissardon/lit-html-bind-native-props-directive/issues"
+  },
+  "homepage": "https://github.com/luissardon/lit-html-bind-native-props-directive#readme",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  }
+}

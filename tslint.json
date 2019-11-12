@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/lib/**/*"
+    ]
+  },
+  "rules": {
+    "prettier": true,
+    "interface-name": false,
+    "no-console": false,
+    "variable-name": false,
+    "quotemark": [
+      true,
+      "single"
+    ]
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ]
+}
