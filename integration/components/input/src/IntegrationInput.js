@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { bindNativeProps } from 'lit-element-bind-native-props-directive';
+import { bindNativeProps } from '../../../directives/lit-element-bind-native-props-directive';
 
 export class IntegrationInput extends LitElement {
   constructor() {
@@ -24,6 +24,8 @@ export class IntegrationInput extends LitElement {
         input {
           font-size: 16px;
           padding: 8px;
+          width: 100%;
+          box-sizing: border-box;
         }
 
         input[type="submit"],
