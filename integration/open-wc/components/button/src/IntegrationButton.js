@@ -1,15 +1,15 @@
 import { LitElement, html, css } from 'lit-element';
 import { bindNativeProps } from 'lit-element-bind-native-props-directive';
 
-export class IntegrationInput extends LitElement {
+export class IntegrationButton extends LitElement {
   constructor() {
     super();
   }
 
   render() {
     return html`
-      <div class="input">
-        <input .="${bindNativeProps({ with: this })}">
+      <div class="button">
+        <button .="${bindNativeProps({ with: this })}">Button</button>
       </div>
     `;
   }
@@ -21,15 +21,9 @@ export class IntegrationInput extends LitElement {
           display: block;
         }
 
-        input {
+        button {
           font-size: 16px;
           padding: 8px;
-        }
-
-        input[type="submit"],
-        input[type="button"] {
-          appearance: button;
-          -webkit-appearance: button;
         }
       `,
     ];
