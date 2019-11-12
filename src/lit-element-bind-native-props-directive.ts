@@ -1,7 +1,8 @@
+import { LitElement } from 'lit-element';
 import { directive, PropertyPart } from 'lit-html';
 
 export interface BindNativePropsInit {
-  with: HTMLElement;
+  with: LitElement;
   reflect: boolean | string[];
 }
 
@@ -17,7 +18,7 @@ export class BindedProps {
 
   constructor(
     private _element: HTMLElement,
-    private _target: HTMLElement,
+    private _target: LitElement,
     private _reflect: boolean | string[] = true
   ) {
     this._bindedProps = this._bindProps() as string[];
@@ -64,12 +65,17 @@ export class BindedProps {
       if (!isReadonly) {
         observableProps.push(prop.toLowerCase());
 
-        // Set Initial Value
-        const initialValue = this.target.getAttribute(prop);
+        // Wait for target updateComplete
+        setTimeout(async () => {
+          await this.target.updateComplete;
 
-        if (initialValue !== null) {
-          this.target.setAttribute(prop, initialValue);
-        }
+          // Set Initial Value
+          const initialValue = this.target.getAttribute(prop);
+
+          if (initialValue !== null) {
+            this.target.setAttribute(prop, initialValue);
+          }
+        });
       }
 
       // Define Prop
