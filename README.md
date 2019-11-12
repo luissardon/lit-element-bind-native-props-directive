@@ -61,7 +61,7 @@ Binds element's properties with a target element and reflects its attributes.
 
 `options`
 
-A [`BindNativePropsInit`](#bindNativePropsInit) object provides options that describe the element *with* wich bind properties and *reflect* attributes changes.
+A [`BindNativePropsInit`](#bindNativePropsInit) object providing options that describe the element *with* wich bind properties and *reflect* attributes changes.
 
 ### Types
 
