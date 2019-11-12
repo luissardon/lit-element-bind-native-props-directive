@@ -75,7 +75,7 @@ The `BindNativePropsInit` object describes the configuration of bind native prop
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
 | `with` | `LitElement` | `undefined` | Target element with which binds element's props |
-| `reflect` | `boolean|string[]` | `true` | (Optional) A `boolean` value, determines whether to reflect the attributes changes on the *target* element or not. An `string[]` value, determines which attributes are going to be reflected. |
+| `reflect` | `boolean\|string[]` | `true` | (Optional) A `boolean` value, determines whether to reflect the attributes changes on the *target* element or not. An `string[]` value, determines which attributes are going to be reflected. |
 
 ## Integration
 
