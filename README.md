@@ -2,7 +2,7 @@
 
 > IMPORTANT: This is a work in progress and subject to major changes until 1.0 release.
 
-Lit-html directive that dynamically binds native props from a native element with a lit-element component
+Lit-html directive that dynamically binds all native props from a native element with a lit-element component
 
 ## Install
 
