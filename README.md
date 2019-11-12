@@ -80,7 +80,7 @@ The `BindNativePropsInit` object describes the configuration of bind native prop
 ## Integration
 
 | Framework | Status | Issues |
-| ---- | ---- | ------- | ----------- |
+| --------- | ------ | ------ |
 | [`LitElement`](https://github.com/luissardon/fluent-elements/integrations/lit-element) | *Implemented* | [*Issues*](https://github.com/luissardon/lit-element-bind-native-props-directive/issues?q=is%3Aissue+is%3Aopen+label%3AIntegration%3A%20LitElement) |
 | [`React`](https://github.com/luissardon/fluent-elements/integrations/react) | *Planned* | [*Issues*](https://github.com/luissardon/lit-element-bind-native-props-directive/issues?q=is%3Aissue+is%3Aopen+label%3AIntegration%3A%20React) |
 | [`Angular`](https://github.com/luissardon/fluent-elements/integrations/react) | *Planned* | [*Issues*](https://github.com/luissardon/lit-element-bind-native-props-directive/issues?q=is%3Aissue+is%3Aopen+label%3AIntegration%3A%20Angular) |
