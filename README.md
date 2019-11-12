@@ -6,7 +6,7 @@ Lit-html directive that dynamically binds native props from a native element to 
 
 ## Install
 
-```node
+```sh
 npm i lit-element-bind-native-props-directive
 ```
 
