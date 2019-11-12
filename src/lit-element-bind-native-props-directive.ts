@@ -1,6 +1,6 @@
 import { directive, PropertyPart } from 'lit-html';
 
-export interface BindNativePropsOpts {
+export interface BindNativePropsInit {
   with: HTMLElement;
   reflect: boolean | string[];
 }
@@ -126,7 +126,10 @@ export class BindedProps {
     }
 
     if (newValue !== null) {
-      if (reflect) {
+      const isArrayAndIncludesAttr = Array.isArray(reflect) && reflect.includes(attr);
+      const shouldReflect = reflect === true || isArrayAndIncludesAttr;
+
+      if (shouldReflect) {
         to.setAttribute(attr, newValue);
       }
     } else {
@@ -141,13 +144,13 @@ export class BindedProps {
 
 const partToBindNativePropsMap = new WeakMap<PropertyPart, BindedProps>();
 
-export const bindNativeProps = directive((opts: BindNativePropsOpts) => (part: PropertyPart) => {
+export const bindNativeProps = directive((options: BindNativePropsInit) => (part: PropertyPart) => {
   const lastShProps = partToBindNativePropsMap.get(part);
 
   if (!lastShProps) {
     const element = part.committer.element;
-    const target = opts.with;
-    const reflect = opts.reflect;
+    const target = options.with;
+    const reflect = options.reflect;
 
     const bindedProps = new BindedProps(element as HTMLElement, target, reflect);
 
