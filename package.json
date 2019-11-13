@@ -1,6 +1,6 @@
 {
   "name": "lit-element-bind-native-props-directive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lit-html directive that binds native props from a native element to a lit-element component",
   "main": "lib/lit-element-bind-native-props-directive.js",
   "types": "lib/lit-element-bind-native-props-directive.d.js",
