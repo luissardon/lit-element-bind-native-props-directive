@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "lit-element": "^2.0.1",
-    "lit-element-bind-native-props-directive": "^0.0.2",
+    "lit-element-bind-native-props-directive": "^0.0.3",
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
