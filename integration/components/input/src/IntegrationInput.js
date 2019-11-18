@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { bindNativeProps } from '../../../directives/lit-element-bind-native-props-directive';
+import { bindNativeProps } from 'lit-element-bind-native-props-directive';
 
 export class IntegrationInput extends LitElement {
   constructor() {

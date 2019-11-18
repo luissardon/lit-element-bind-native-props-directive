@@ -73,7 +73,7 @@ export class BindedProps {
           const initialValue = this.target.getAttribute(prop);
 
           if (initialValue !== null) {
-            this.target.setAttribute(prop, initialValue);
+            this.element.setAttribute(prop, initialValue);
           }
         });
       }
